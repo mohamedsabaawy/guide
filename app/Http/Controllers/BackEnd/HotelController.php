@@ -9,6 +9,7 @@ use App\Models\Hotel;
 use function App\Sabaawy\responseJson;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Storage;
 use PhpParser\Node\Stmt\Return_;
 
 class HotelController extends Controller
@@ -21,7 +22,7 @@ class HotelController extends Controller
     public function index()
     {
         $hotels = Hotel::all();
-       return view('backend.hotel.index',compact('hotels'));
+       return view('backend/hotel/index',compact('hotels'));
     }
 
     /**
@@ -32,7 +33,7 @@ class HotelController extends Controller
     public function create()
     {
         $cities = City::all();
-        return view('backEnd.hotel.create',compact('cities'));
+        return view('backEnd/hotel/create',compact('cities'));
     }
 
     /**
@@ -73,7 +74,7 @@ class HotelController extends Controller
     public function edit(Hotel $hotel)
     {
         $cities = City::all();
-        return view('backEnd.hotel.edit',compact('hotel','cities'));
+        return view('backEnd/hotel/edit',compact('hotel','cities'));
     }
 
     /**
@@ -108,6 +109,7 @@ class HotelController extends Controller
      */
     public function destroy(Hotel $hotel)
     {
+        Storage::disk('public')->delete($hotel->cover);
         $hotel->delete();
         return redirect(route('hotel.index'))->with('status','Hotel deleted success');
     }

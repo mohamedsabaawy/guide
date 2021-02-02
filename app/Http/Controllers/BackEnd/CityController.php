@@ -19,7 +19,7 @@ class CityController extends Controller
     public function index()
     {
         $cities = City::all();
-       return view('backend.city.index',compact('cities'));
+       return view('backend/city/index',compact('cities'));
     }
 
     /**
@@ -30,7 +30,7 @@ class CityController extends Controller
     public function create()
     {
         $countries = Country::all();
-        return view('backEnd.city.create',compact('countries'));
+        return view('backEnd/city/create',compact('countries'));
     }
 
     /**
@@ -65,7 +65,7 @@ class CityController extends Controller
     public function edit(City $city)
     {
         $countries = Country::all();
-        return view('backEnd.city.edit',compact('city','countries'));
+        return view('backEnd/city/edit',compact('city','countries'));
     }
 
     /**

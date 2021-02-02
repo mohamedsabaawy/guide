@@ -7,6 +7,7 @@ use App\Models\City;
 use App\Models\Hotel;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Storage;
 
 class HotelController extends Controller
 {
@@ -14,14 +15,14 @@ class HotelController extends Controller
     {
 
         $hotel = Auth::user();
-        return view('hotel.show',compact('hotel'));
+        return view('hotel/show',compact('hotel'));
     }
 
     public function profile(Request $request)
     {
         $hotel = Auth::user();
         $cities = City::all();
-        return view('hotel.profile',compact('hotel','cities'));
+        return view('hotel/profile',compact('hotel','cities'));
     }
 
     public function update(Request $request)
@@ -29,6 +30,8 @@ class HotelController extends Controller
        $hotel = Hotel::find(Auth::id());
        if (!$request->cover ==null){
            $request->cover = $request->cover->store('hotel','public');
+           Storage::disk('public')->delete($hotel->cover);
+
        }else{
            $request->cover = Auth::user()->cover;
        }
@@ -44,7 +47,7 @@ class HotelController extends Controller
 
     public function loginForm()
     {
-        return view('hotel.login');
+        return view('hotel/login');
     }
 
     public function login(Request $request)
@@ -53,7 +56,7 @@ class HotelController extends Controller
         if (Auth::guard('hotel')->attempt($user)){
             return redirect(route('hotel'));
         }else{
-            return redirect()->back()->with('massage','eeeee');
+            return redirect()->back()->with('massage','error');
         }
     }
 

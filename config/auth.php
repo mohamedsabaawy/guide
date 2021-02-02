@@ -46,8 +46,8 @@ return [
         ],
 
         'api' => [
-            'driver' => 'token',
-            'provider' => 'users',
+            'driver' => 'jwt',
+            'provider' => 'clientsApi',
             'hash' => false,
         ],
     ],
@@ -77,6 +77,10 @@ return [
         'hotels' => [
             'driver' => 'eloquent',
             'model' => App\Models\Hotel::class,
+        ],
+        'clientsApi' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\Client::class,
         ],
 
         // 'users' => [

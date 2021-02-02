@@ -19,7 +19,7 @@ class CountryController extends Controller
     public function index()
     {
         $countries = Country::all();
-       return view('backend.country.index',compact('countries'));
+       return view('backend/country/index',compact('countries'));
     }
 
     /**
@@ -29,7 +29,7 @@ class CountryController extends Controller
      */
     public function create()
     {
-        return view('backEnd.country.create');
+        return view('backEnd/country/create');
     }
 
     /**
@@ -63,7 +63,7 @@ class CountryController extends Controller
      */
     public function edit(Country $country)
     {
-        return view('backEnd.country.edit',compact('country'));
+        return view('backEnd/country/edit',compact('country'));
     }
 
     /**
