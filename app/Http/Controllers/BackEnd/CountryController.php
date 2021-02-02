@@ -29,7 +29,7 @@ class CountryController extends Controller
      */
     public function create()
     {
-        return view('backEnd/country/create');
+        return view('backend/country/create');
     }
 
     /**
@@ -63,7 +63,7 @@ class CountryController extends Controller
      */
     public function edit(Country $country)
     {
-        return view('backEnd/country/edit',compact('country'));
+        return view('backend/country/edit',compact('country'));
     }
 
     /**

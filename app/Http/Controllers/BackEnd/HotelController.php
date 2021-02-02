@@ -33,7 +33,7 @@ class HotelController extends Controller
     public function create()
     {
         $cities = City::all();
-        return view('backEnd/hotel/create',compact('cities'));
+        return view('backend/hotel/create',compact('cities'));
     }
 
     /**
@@ -74,7 +74,7 @@ class HotelController extends Controller
     public function edit(Hotel $hotel)
     {
         $cities = City::all();
-        return view('backEnd/hotel/edit',compact('hotel','cities'));
+        return view('backend/hotel/edit',compact('hotel','cities'));
     }
 
     /**

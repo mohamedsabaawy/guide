@@ -11,6 +11,7 @@
       <change beforePath="$PROJECT_DIR$/../bloodBank/resources/views/front/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../bloodBank/resources/views/front/master.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bloodBank/resources/views/front/posts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../bloodBank/resources/views/front/posts.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bloodBank/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/../bloodBank/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -273,6 +274,17 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Models" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="giud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="giud" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="giud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="giud" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -334,16 +346,15 @@
       <workItem from="1611444284664" duration="459000" />
       <workItem from="1611444830287" duration="184000" />
       <workItem from="1611445406932" duration="43369000" />
-      <workItem from="1612129661735" duration="6691000" />
+      <workItem from="1612129661735" duration="6905000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51119000" />
+    <option name="totallyTimeSpent" value="51333000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22692889" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -513,14 +524,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/backEnd/country/edit.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/backend/country/edit.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="291">
           <caret line="21" column="122" selection-start-line="21" selection-start-column="122" selection-end-line="21" selection-end-column="122" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/backEnd/country/create.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/backend/country/create.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="25" selection-end-column="45" />
@@ -541,14 +552,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/backEnd/hotel/create.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/backend/hotel/create.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="58" column="52" selection-start-line="58" selection-start-column="52" selection-end-line="58" selection-end-column="52" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/backEnd/city/create.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/backend/city/create.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="13" selection-end-column="26" />
